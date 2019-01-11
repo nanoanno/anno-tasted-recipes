@@ -1,0 +1,33 @@
+.site-content {}
+
+.content-area {}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 #{$line_height}em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.byline {
+	display: none;
+
+	.single &,
+	.group-blog & {
+		display: inline;
+	}
+}
+
+.page-content, .entry-content, .entry-summary {
+	@extend .clearfix;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 #{$line_height}em;
+}

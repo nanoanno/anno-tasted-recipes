@@ -1,0 +1,44 @@
+%button {
+	@include button();
+	/* Corrects inability to style clickable 'input' types in iOS */
+	-webkit-appearance: button;
+	padding: .375em 1em;
+	background: #e6e6e6;
+	border-color: #ccc;
+	color: inherit;
+
+	&:hover, &:focus, &:active {
+		background: #d5d5d5;
+	}
+
+	&::-moz-focus-inner {
+		/* Correct oddly displayed inner padding and border in FF3/4 - www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+		border: 0;
+		padding: 0;
+	}
+}
+
+button {
+	@extend %button;
+}
+
+/* Links styled to look like buttons */
+.button {
+	@include button();
+	display: inline-block;
+	padding: .75em 2.25em;
+	color: white;
+	border-color: transparent;
+	background: blue;
+	text-decoration: none;
+
+	&:visited {
+		color: white;
+	}
+
+	&:hover, &:active, &:focus {
+		color: white;
+		background: lighten(blue, 10%);
+		text-decoration: none;
+	}
+}
