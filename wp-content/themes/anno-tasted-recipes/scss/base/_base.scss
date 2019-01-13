@@ -165,17 +165,20 @@ th {
 	font-weight: bold;
 }
 
-// a {
-// 	color: #F0141E;
+a {
+	color: $kraft;
+	text-decoration: none;
 
-// 	&:visited {
-// 		color: #F0141E;
-// 	}
+	&:visited {
+		color: $kraft;
+		text-decoration: none;
+	}
 
-// 	&:hover, &:focus, &:active {
-// 		color: #F0141E;
-// 	}
-// }
+	&:hover, &:focus, &:active {
+		color: $kraft;
+		text-decoration: underline;
+	}
+}
 
 audio, canvas, iframe, img, svg, video {
 	vertical-align: middle;
